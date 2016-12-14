@@ -1,0 +1,12 @@
+
+{% block content %}
+    <form method="post" class="post-form" style="width: 50%">{% csrf_token %}
+        {{ form.as_p }}
+        <input style="" type="submit" value="Ok"><span
+                class="glyphicon glyphicon-ok"></span></input>
+    </form>
+{% endblock %}
+
+{% block sidebar %}
+    <a href="{% url 'user_creation' %}" style="color: #2e284c "><h1 style="font-size: 15pt;">Registration</h1></a>
+{% endblock %}
